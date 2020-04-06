@@ -1,4 +1,5 @@
 //Solving this problem using BFS(Breadth First Search)
+//url: https://www.hackerrank.com/contests/projecteuler/challenges/euler244/problem
 
 const calculateSum = path => {
     let checksum = 0
