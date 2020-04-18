@@ -1,11 +1,22 @@
 {
   "name": "algo",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notshekhar/algorithms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/notshekhar/algorithms/issues"
+  },
+  "homepage": "https://github.com/notshekhar/algorithms#readme",
+  "description": "",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
