@@ -4,8 +4,8 @@
 // are weighted by frequency
 
 class Search {
-    constructor() {
-        this.keys = {}
+    constructor(keys) {
+        this.keys = keys || {}
     }
     addKey(str) {
         if (this.keys[str] != undefined) {
