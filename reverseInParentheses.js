@@ -14,9 +14,9 @@
 // reverseInParentheses(inputString) = "foobazrabblim".
 // Because "foo(bar(baz))blim" becomes "foo(barzab)blim" and then "foobazrabblim".
 
-let str1 = "foo(bar(baz))blim"
-let str2 = "foo(bar)baz(blim)"
-let str3 = "foo(bar)baz"
+let str1 = "foo(bar(baz))blim" //solves once and re call function and found base canse and return the value
+let str2 = "foo(bar)baz(blim)" //base case
+let str3 = "foo(bar)baz" //base case 
 let str = "((()))hello(bar)"
 
 function reverseInParentheses(str) {
