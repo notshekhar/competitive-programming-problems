@@ -12,6 +12,6 @@ const moveZeros = (arr) => {
     return arr
 }
 
-// let a = [0, 1, 0, 2, 12]
+let a = [0, 1, 0, 2, 12]
 
 // console.log(moveZeros(a))
