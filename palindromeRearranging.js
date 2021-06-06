@@ -22,19 +22,7 @@
 
 // true if the characters of the inputString can be rearranged to form a palindrome, false otherwise.
 
-function palindromeRearranging(str) {
-    let dist = {}
-    for (let i = 0; i < str.length; i++) {
-        if (dist[str[i]]) dist[str[i]] = dist[str[i]] + 1
-        else dist[str[i]] = 1
-    }
-    let odds = 0
-    for (let el in dist) {
-        if (dist[el] % 2 == 1) odds++
-        if (odds >= 2) return false
-    }
-    return true
-}
+
 let c = "aadc"
 let b = "ccaabb" // -> cabbac
 let a = "aabb" // -> abba
