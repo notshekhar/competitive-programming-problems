@@ -5,6 +5,8 @@
 // Find the maximum number of thieves that can be caught
 //Input: ["p", "t", "t", "p", "t"], k=1
 //Output: 2
+// Input: ["t", "t", "p", "p", "t"], k=2
+//Output: 2
 
 const testCase = ["p", "t", "t", "p", "t"]
 const k = 1
@@ -15,9 +17,14 @@ const k = 1
         let person = arr[i]
         if (person === "p") {
             //check left side
-            if (i != 0)
-                for (let j = i - 1; j > i - k - 1; j--) {
+            if (i != 0) {
+                let condition = i - k - 1
+                for (let j = i - 1; j > condition; j--) {
                     if (j == -1) break
+                    if (arr[j] == 1) {
+                        condition--
+                        continue
+                    }
                     if (arr[j] == "t") {
                         arr[j] = -1
                         arr[i] = 1
@@ -25,6 +32,7 @@ const k = 1
                         break
                     }
                 }
+            }
             //check right side
             if (i != arr.length - 1 && arr[i] != 1)
                 for (let j = i + 1; j < i + k + 1; j++) {
